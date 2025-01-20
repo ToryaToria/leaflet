@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Интерактивная карта</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="map" class="map" style="width: 640px; height: 480px;"></div>
+
+  <button id="next" type="button">Показать оставшиеся точки на карте и скрыть кнопку</button>
+
+  <template id="balloon">
+    <section class="balloon">
+      <h3 class="balloon__title">Остров сокровищ</h3>
+      <p class="balloon__lat-lng">Координаты: 12.34567, 98.76543</p>
+    </section>
+  </template>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+	integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+	crossorigin=""></script>
+
+  <script src="./leaflet-map.js"></script>
+</body>
+</html>
